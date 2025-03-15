@@ -1,10 +1,12 @@
 {
     "name": "Techtime NWS Alerts",
-    "content_in_root": false,
-    "domains": ["sensor"],
-    "country": "US",
-    "homeassistant": "2023.0.0",
-    "iot_class": "cloud_polling",
-    "render_readme": true
+    "description": "A custom Home Assistant integration providing National Weather Service (NWS) weather alerts based on zone ID.",
+    "domain": "techtime_nws_alerts",
+    "codeowners": ["@TechTimeGuy"],
+    "documentation": "https://github.com/TechTimeGuy/techtime_nws_alerts",
+    "issue_tracker": "https://github.com/TechTimeGuy/techtime_nws_alerts/issues",
+    "version": "1.0.0",
+    "requirements": [],
+    "dependencies": [],
+    "iot_class": "cloud_polling"
   }
-  
