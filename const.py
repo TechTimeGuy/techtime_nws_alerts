@@ -1,1 +1,1 @@
-DOMAIN = "nws_alerts"
+DOMAIN = "techtime_nws_alerts"
