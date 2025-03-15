@@ -6,5 +6,6 @@
     "requirements": [],
     "dependencies": [],
     "codeowners": ["@TechTimeGuy"],
-    "config_flow": true
+    "config_flow": true,
+    "icon": "/local/custom_components/techtime_nws_alerts/logo.png"
   }
