@@ -1,0 +1,18 @@
+{
+    "title": "TechTime NWS Alerts",
+    "description": "Get real-time National Weather Service alerts in Home Assistant.",
+    "step": {
+      "user": {
+        "title": "Setup TechTime NWS Alerts",
+        "description": "Enter your NWS Zone ID (e.g. NCC019)."
+      }
+    },
+    "data": {
+      "zone_id": "NWS Zone ID"
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to NWS API.",
+      "invalid_zone": "The provided Zone ID is invalid."
+    }
+  }
+  
