@@ -1,6 +1,6 @@
 """NWS Alerts integration."""
 
-DOMAIN = "nws_alerts"
+DOMAIN = "techtime_nws_alerts"
 
 async def async_setup(hass, config):
     """Set up from YAML (optional)."""
