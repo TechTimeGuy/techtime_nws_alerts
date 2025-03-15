@@ -7,5 +7,4 @@
     "dependencies": [],
     "codeowners": ["@TechTimeGuy"],
     "config_flow": true,
-    "icon": "https://github.com/TechTimeGuy/techtime_nws_alerts/logo.png"
   }
