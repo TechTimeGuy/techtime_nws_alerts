@@ -2,9 +2,9 @@
     "domain": "techtime_nws_alerts",
     "name": "Techtime NWS Alerts",
     "version": "1.0.0",
-    "documentation": "https://github.com/TechTimeGuy/techtime_nws_alerts",  
+    "documentation": "https://github.com/TechTimeGuy/techtime_nws_alerts",
     "requirements": [],
     "dependencies": [],
     "codeowners": ["@TechTimeGuy"],
     "config_flow": true
-}
+  }

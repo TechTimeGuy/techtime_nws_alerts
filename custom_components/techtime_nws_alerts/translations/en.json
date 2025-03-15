@@ -1,0 +1,20 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Techtime NWS Alerts Setup",
+        "description": "Configure your NWS Alert zone.",
+        "data": {
+          "zone_id": "NWS Zone ID",
+          "name": "Sensor Name (Optional)"
+        }
+      }
+    },
+    "error": {
+      "zone_exists": "This zone is already configured!"
+    },
+    "abort": {
+      "single_instance_allowed": "Only one instance is allowed."
+    }
+  }
+}

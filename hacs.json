@@ -1,0 +1,10 @@
+{
+    "name": "Techtime NWS Alerts",
+    "content_in_root": false,
+    "domains": ["sensor"],
+    "country": "US",
+    "homeassistant": "2023.0.0",
+    "iot_class": "cloud_polling",
+    "render_readme": true
+  }
+  
