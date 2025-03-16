@@ -1,0 +1,38 @@
+
+- id: 'alert_sound_multiple_players'
+  alias: "Play Alert Sound on Multiple Players"
+  description: 'Plays a specified alert sound on multiple media players when a new alert is published.'
+  trigger:
+    - platform: state
+      entity_id: sensor.techtime_nws_alerts
+      attribute: headline
+  action:
+    - service: media_player.play_media
+      target:
+        entity_id: media_player.tv_room
+      data:
+        media_content_id: media-source://media_source/local/Techtime_alert_nws.mp3 # find this file in the audio folder  save to your "My Media"instance 
+        media_content_type: audio/mpeg
+    - service: media_player.play_media
+      target:
+        entity_id: media_player.game_room
+      data:
+        media_content_id: media-source://media_source/local/Techtime_alert_nws.mp3 # find this file in the audio folder  save to your "My Media"instance 
+        media_content_type: audio/mpeg
+    - delay:
+        seconds: 5  # Adjust delay as needed for the alert sound to finish
+    - service: tts.cloud_say
+      data:
+        cache: false
+        entity_id: media_player.tv_room
+        message: >
+          "New weather alert: {{ state_attr('sensor.techtime_nws_alerts', 'headline') }}. 
+          Severity: {{ state_attr('sensor.techtime_nws_alerts', 'severity') }}"
+    - service: tts.cloud_say
+      data:
+        cache: false
+        entity_id: media_player.game_room
+        message: >
+          "New weather alert: {{ state_attr('sensor.techtime_nws_alerts', 'headline') }}. 
+          Severity: {{ state_attr('sensor.techtime_nws_alerts', 'severity') }}"
+  mode: single

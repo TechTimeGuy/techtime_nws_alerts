@@ -84,20 +84,11 @@ entities:
 
 Trigger notifications or actions when a new alert is issued:
 
-alias: Notify on New NWS Alert
-trigger:
-  - platform: state
-    entity_id: sensor.techtime_nws_alerts
-    from: "No Alerts"
-condition: []
-action:
-  - service: notify.notify
-    data:
-      message: |
-        🚨 New NWS Alert:
-        {{ state_attr('sensor.techtime_nws_alerts', 'headline') }}
+## Example Automations
 
-        {{ state_attr('sensor.techtime_nws_alerts', 'description') }}
+- [Weather Alert Notification with TTS and Alert Sound](examples/alert_example_1.yaml)
+- [Play Alert Sound on Multiple Players](examples/alert_example_2.yaml)
+- [Weather Alert MP3](audio/Techtime_alert_nws.mp3)
 
 📋 Sensor Attributes
 Attribute	Description
