@@ -1,0 +1,20 @@
+- id: 'Mobile Alerts Example'
+  alias: Mobile App NWS Alert
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - sensor.techtime_nws_alerts
+    attribute: headline
+  conditions: []
+  actions:
+  - action: notify.mobile_app_blazes_phone  # add your mobile app  notification instance here 
+    metadata: {}
+    data:
+      title: TechTime Weather Alert
+      message: '"New weather alert: {{ state_attr(''sensor.techtime_nws_alerts'',
+          ''headline'') }}. Severity: {{ state_attr(''sensor.techtime_nws_alerts'',
+          ''severity'') }}"
+
+          '
+  mode: single
