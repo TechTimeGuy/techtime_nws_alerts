@@ -39,11 +39,11 @@ The structure should look like:
 
 ⚙️ Configuration
 UI Setup (Recommended)
+[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=techtime_nws_alerts)
+or ...
 
     Go to Home Assistant → Settings → Devices & Services → Integrations.
     Click + Add Integration and search for Techtime NWS Alerts.
-    or 
-    [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=techtime_nws_alerts)
     Enter your NWS Zone ID (e.g., NCC019) and click Submit.
     The sensor will be created automatically.
 
