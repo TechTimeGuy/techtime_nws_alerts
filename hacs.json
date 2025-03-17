@@ -5,7 +5,7 @@
     "codeowners": ["@TechTimeGuy"],
     "documentation": "https://github.com/TechTimeGuy/techtime_nws_alerts",
     "issue_tracker": "https://github.com/TechTimeGuy/techtime_nws_alerts/issues",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "requirements": [],
     "dependencies": [],
     "iot_class": "cloud_polling"
